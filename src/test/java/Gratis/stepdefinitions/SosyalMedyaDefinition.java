@@ -16,8 +16,6 @@ public class SosyalMedyaDefinition {
     @Given("Kullanıcı Ana Sayfaya Gider")
     public void kullanıcı_ana_sayfaya_gider() {
         getDriver().get(ConfigReader.getProperty("gratis_url"));
-        Driver.bekle(4);
-
 
     }
 

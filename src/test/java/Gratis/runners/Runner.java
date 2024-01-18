@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources",
         glue = {"Gratis/stepdefinitions","Gratis/hooks"},
-        tags = "@e2e",
+        tags = "@US09",
         dryRun = false
 
 )
