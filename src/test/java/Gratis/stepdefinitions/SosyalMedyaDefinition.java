@@ -42,9 +42,7 @@ public class SosyalMedyaDefinition {
 
         sosyalMedyaPage.instagram.click();
 
-        ReusableMethods.yeniSekmeAc();
         sosyalMedyaPage.instagramDogrular.isDisplayed();
-
         ReusableMethods.anaSekmeyeGeriDon();
     }
 
