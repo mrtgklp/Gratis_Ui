@@ -6,13 +6,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class BildirimlerimPage {
-    public BildirimlerimPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public BildirimlerimPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-            //(//span[text()='Giriş Yap'])
-    @FindBy(css = "div[class='log-actions']")
-    public WebElement gırısYap;
+    //(//span[text()='Giriş Yap'])
+    @FindBy(xpath = "(//*[text()='X'])[2]")
+    public WebElement popupClosed;
+
+    //@FindBy(css = "div[class='log-actions']")
+    //public WebElement gırısYap;
+
+    @FindBy(xpath = "//*[text()='ya da Giriş Yapın']")
+    public WebElement yadaGirişYap;
 
     @FindBy(xpath = "//*[text()=' Giriş Yap ']")
     public WebElement girişYap;

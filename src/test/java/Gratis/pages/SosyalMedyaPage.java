@@ -11,16 +11,19 @@ public class SosyalMedyaPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "(//a[@class=' facebook'])[2]")
+    @FindBy(xpath = "(//*[text()='X'])[2]")
+    public WebElement popupClosed;
+
+    @FindBy(xpath = "(//*[text()='Facebook'])")
     public WebElement facebook;
 
-    @FindBy(xpath = "(//a[@class=' instagram'])[2]")
+    @FindBy(xpath = "//*[text()='Instagram']")
     public WebElement  instagram;
 
-    @FindBy(xpath = "(//a[@class=' twitter'])[2]")
-    public WebElement   twitter;
+    @FindBy(xpath = "(//*[text()='X'])[1]")
+    public WebElement   x;
 
-    @FindBy(xpath = "(//a[@class=' youtube'])[2]")
+    @FindBy(xpath = "(//*[text()='Youtube'])[1]")
     public WebElement   youtube;
 
 

@@ -29,6 +29,8 @@ public class SosyalMedyaDefinition {
 
     @Then("Kullanıcı facebook Tıklayabilir ve Kullanabilir Oldugunu Görür")
     public void kullanıcı_facebook_tıklayabilir_ve_kullanabilir_oldugunu_görür() {
+        sosyalMedyaPage.popupClosed.click();
+        Driver.bekle(3);
         sosyalMedyaPage.facebook.click();
         Driver.bekle(5);
         ReusableMethods.yeniSekmeAc();
@@ -48,7 +50,7 @@ public class SosyalMedyaDefinition {
 
     @Then("Kullanıcı Twitter Tıklayabilir ve Kullanabilir Oldugunu Görür")
     public void kullanıcı_twitter_tıklayabilir_ve_kullanabilir_oldugunu_görür() {
-        sosyalMedyaPage.twitter.click();
+        sosyalMedyaPage.x.click();
         ReusableMethods.anaSekmeyeGeriDon();
     }
 

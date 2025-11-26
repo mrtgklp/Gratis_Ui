@@ -1,6 +1,7 @@
 package Gratis.stepdefinitions;
 
 import Gratis.pages.BildirimlerimPage;
+import Gratis.pages.SosyalMedyaPage;
 import Gratis.utilities.ConfigReader;
 import Gratis.utilities.Driver;
 import Gratis.utilities.ReusableMethods;
@@ -21,7 +22,10 @@ public class BildirimlerimDefinition {
 
     @Then("Kullanıcı Giriş Yap Butonu Tıklar")
     public void kullanıcı_giriş_yap_butonu_tıklar() {
-        bildirimlerimPage.gırısYap.click();
+        bildirimlerimPage.popupClosed.click();
+        Driver.bekle(3);
+
+        bildirimlerimPage.yadaGirişYap.click();
         Driver.bekle(3);
 
 
